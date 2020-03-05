@@ -1,22 +1,14 @@
 package com.example.demo;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
+@Getter
+@Setter
 public class User {
-
+    String id;
     String firstName;
-
-    public User(String f){
-        this.firstName = f;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
 }

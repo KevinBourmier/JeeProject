@@ -12,9 +12,6 @@ public class DemoApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);
         UserService userService = context.getBean(UserService.class);
-
-        userService.createUser("Kevin");
-        userService.createUser("Rooney");
     }
 
 }
