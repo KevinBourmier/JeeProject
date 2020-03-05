@@ -51,7 +51,7 @@ public class UserServiceTest {
 
     @Test
     void should_throw_exception_when_max_user_reached(){
-        userConfig = new UserConfig(0);
+        userConfig = new UserConfig();
         userService = new UserService(userStore, userConfig);
 
         try {

@@ -24,7 +24,7 @@ public class UserService {
 
         User user = new User("Kevin");
         userStore.addUser(user);
-        System.out.println("User created with firstName : " + firstName);
+        System.out.println("Max users is : " + userConfig.getMaxUsers());
 
     }
 
